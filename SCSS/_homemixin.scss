@@ -1,0 +1,42 @@
+@import "./variables";
+
+
+@mixin NavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: $inline;
+    width: 100%;
+    height: 89px;
+    background-color: $backgroundColor;
+    .logo{
+        // background-color: red;
+        width: 115px;
+        height: 46px;
+        .logowrap{
+            width: 115px;
+            height: 46px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .navlinks{
+        ul{
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                    color: $primaryColor;
+                    font-size: $navFont;
+                }
+            }
+        }
+    }
+    .search{}
+    .cta-section{}
+}

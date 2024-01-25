@@ -1,5 +1,11 @@
+@import "./variables";
+@import "./homemixin";
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+header{
+    @include NavBar;
 }

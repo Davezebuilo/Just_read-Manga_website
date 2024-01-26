@@ -16,3 +16,7 @@ header{
         @include Navbar-p;
     };
 }
+
+footer{
+    @include footer;
+}

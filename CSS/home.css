@@ -155,3 +155,170 @@ header .hamburger {
     font-size: 25px;
   }
 }
+
+footer {
+  width: 100%;
+  height: 400px;
+  background-color: #1897BF;
+  padding-inline: 109px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .hero {
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .hero .logo-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 55px;
+}
+footer .hero .logo-socials .logo-f {
+  width: 114px;
+  height: 46px;
+}
+footer .hero .logo-socials .logo-f img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .hero .logo-socials .socials-f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+footer .hero .logo-socials .socials-f .t-f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .hero .logo-socials .socials-f .t-f div {
+  width: 50px;
+  height: 50px;
+  background: none;
+  border-radius: 50%;
+  border: 1px solid #FAFAFA;
+  color: #FAFAFA;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+footer .hero .logo-socials .socials-f .t-f div p i {
+  font-size: 16px;
+}
+footer .hero .logo-socials .socials-f .t-f h5 {
+  font-size: 16px;
+  color: #FAFAFA;
+}
+footer .hero .stores-f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+footer .hero .stores-f h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #FAFAFA;
+}
+footer .hero .stores-f ul {
+  list-style: none;
+}
+footer .hero .stores-f ul li {
+  margin-bottom: 25px;
+}
+footer .hero .stores-f ul li p {
+  font-size: 16px;
+  color: #FAFAFA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .hero .stores-f ul li p i {
+  color: #FFC225;
+  font-size: 20px;
+}
+footer .hero .qlink-f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+footer .hero .qlink-f h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #FAFAFA;
+}
+footer .hero .qlink-f .linksection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+}
+footer .hero .qlink-f .linksection ul {
+  list-style: none;
+}
+footer .hero .qlink-f .linksection ul li {
+  margin-bottom: 25px;
+}
+footer .hero .qlink-f .linksection ul li a {
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+footer .hero .qlink-f .linksection ul li a:hover {
+  text-decoration: underline;
+}
+footer .copyright {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FAFAFA;
+}
+footer .copyright p {
+  font-size: 16px;
+}

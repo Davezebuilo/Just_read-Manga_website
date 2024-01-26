@@ -4,8 +4,15 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Lexend', sans-serif;
 }
 
 header{
-    @include NavBar;
+    @include Navbar;
+    @include mediaQuery(1024px, 768px){
+        @include Navbar-i;
+    }
+    @include mediaQuery(767px){
+        @include Navbar-p;
+    };
 }

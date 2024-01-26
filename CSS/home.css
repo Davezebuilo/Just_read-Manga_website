@@ -3,6 +3,7 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Lexend", sans-serif;
 }
 
 header {
@@ -23,10 +24,12 @@ header {
 header .logo {
   width: 115px;
   height: 46px;
+  cursor: pointer;
 }
 header .logo .logowrap {
-  width: 115px;
-  height: 46px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 header .logo .logowrap img {
   width: 100%;
@@ -38,11 +41,117 @@ header .navlinks ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
+  gap: 50px;
   list-style: none;
+}
+header .navlinks ul li {
+  height: 30px;
+  overflow: hidden;
 }
 header .navlinks ul li a {
   text-decoration: none;
   color: #1897BF;
   font-size: 20px;
+  font-family: "Lexend", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+header .navlinks ul li a::before {
+  content: "";
+  height: 3px;
+  border-radius: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -1rem;
+  background-color: #FFC225;
+  -webkit-transition: 300ms ease-in;
+  transition: 300ms ease-in;
+}
+header .navlinks ul li a:hover::before {
+  bottom: -0.3rem;
+}
+header .search {
+  color: #1897BF;
+  font-size: 20px;
+  cursor: pointer;
+}
+header .cta-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+header .cta-section .register {
+  width: 104px;
+  height: 41px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  border: 1.5px solid #1897BF;
+  background: none;
+  color: #1897BF;
+  font-size: 16px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+header .cta-section .register:hover {
+  background-color: #FFC225;
+  color: #FAFAFA;
+  border: none;
+}
+header .cta-section .login {
+  width: 104px;
+  height: 41px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #1897BF;
+  color: #FAFAFA;
+  font-size: 16px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+header .cta-section .login:hover {
+  background: none;
+  border: 1.5px solid #1897BF;
+  color: #1897BF;
+}
+header .hamburger {
+  color: #1897BF;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  header {
+    padding-inline: 35px;
+  }
+  header .navlinks ul {
+    gap: 30px;
+  }
+  header .search {
+    font-size: 25px;
+  }
+  header .cta-section {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    padding-inline: 20px;
+  }
+  header .logo {
+    width: 80px;
+    height: 30px;
+  }
+  header .navlinks {
+    display: none;
+  }
+  header .cta-section {
+    display: none;
+  }
+  header .hamburger {
+    display: block;
+    font-size: 25px;
+  }
 }

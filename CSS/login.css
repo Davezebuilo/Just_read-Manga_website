@@ -15,14 +15,6 @@ body {
   background-color: #F6FDFF;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: "Lexend", sans-serif;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;

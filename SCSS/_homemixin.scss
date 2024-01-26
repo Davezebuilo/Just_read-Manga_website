@@ -1,0 +1,317 @@
+@import "./variables";
+
+// Beginning of mixin for laptop navbar
+@mixin Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: $inline;
+    width: 100%;
+    height: 89px;
+    background-color: $backgroundColor;
+    .logo{
+        // background-color: red;
+        width: 115px;
+        height: 46px;
+        cursor: pointer;
+        .logowrap{
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .navlinks{
+        ul{
+            display: flex;
+            gap: 50px;
+            list-style: none;
+            li{
+                // background-color: blue;
+                height: 30px;
+                overflow: hidden;
+                // transition: 500ms ease-in;
+                a{
+                    text-decoration: none;
+                    color: $primaryColor;
+                    font-size: $navFont;
+                    font-family: 'Lexend', sans-serif;
+                    position: relative;
+                    overflow: hidden;
+                    // background-color: red;
+                    // transition: 500ms ease-in;
+                    &::before{
+                        content: "";
+                        height: 3px;
+                        border-radius: 2px;
+                        width: 100%;
+                        position: absolute;
+                        bottom: -1rem;
+                        background-color: $secondaryColor;
+                        transition: 300ms ease-in;
+                    }
+                    &:hover::before{
+                        bottom: -0.3rem;
+                    }
+                }
+            }
+        }
+    }
+    .search{
+        color: $primaryColor;
+        font-size: $navFont;
+        cursor: pointer;
+    }
+    .cta-section{
+        display: flex;
+        gap: 2rem;
+        .register{
+            @include button-1();
+        }
+        .login{
+            @include button-2();
+        }
+    }
+    .hamburger{
+        color: $primaryColor;
+        font-size: $navFont;
+        cursor: pointer;
+        display: none;
+    }
+}
+// End of mixin for laptop navbar
+
+
+// Beginning of mixin for laptop footer
+@mixin footer{
+    width: 100%;
+    height: 400px;
+    background-color: $primaryColor;
+    padding-inline: $inline;
+    display: flex;
+    flex-direction: column;
+    font-weight: $fontW-footer;
+    .hero{
+        height: 350px;
+        display: flex;
+        // background-color: cyan;
+        justify-content: space-between;
+        align-items: center;
+        // gap: 170px;
+        .logo-socials{
+            // background-color: brown;
+            display: flex;
+            flex-direction: column;
+            gap: 55px;
+            .logo-f{
+                width: 114px;
+                height: 46px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .socials-f{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .t-f{
+                    display: flex;
+                    gap: 1rem;
+                    align-items: center;
+                    div{
+                        width: 50px;
+                        height: 50px;
+                        background: none;
+                        border-radius: 50%;
+                        border: 1px solid $whiteColor;
+                        color: $whiteColor;
+                        display: grid;
+                        place-items: center;
+                        p{
+                            i{
+                                font-size: $smlFont;
+                            }
+                        }
+                    }
+                    h5{
+                        font-size: $smlFont;
+                        color: $whiteColor
+                    }
+                }
+            }
+        }
+        .stores-f{
+            // background-color: gold;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            h2{
+                font-size: 30px;
+                font-weight: 700;
+                color: $whiteColor;
+            }
+            ul{
+                list-style: none;
+                li{
+                    margin-bottom: 25px;
+                    p{
+                        font-size: $smlFont;
+                        color: $whiteColor;
+                        display: flex;
+                        gap: 14px;
+                        align-items: center;
+                        i{
+                            color: $secondaryColor;
+                            // margin-right: 10px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .qlink-f{
+            display: flex;
+            flex-direction: column;
+            // background-color: crimson;
+            gap: 32px;
+            h2{
+                font-size: 30px;
+                font-weight: 700;
+                color: $whiteColor;
+            }
+            .linksection{
+                display: flex;
+                gap: 60px;
+                ul{
+                    list-style: none;
+                    li{
+                        margin-bottom: 25px;
+                        a{
+                            font-size: $smlFont;
+                            color: $whiteColor;
+                            text-decoration: none;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        height: 50px;
+        // background-color: red;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        color: $whiteColor;
+        p{
+            font-size: $smlFont;
+        }
+    }
+}
+// End of mixin for laptop footer
+
+// Beginning of mixin for buttons
+@mixin button-1{
+    width: 104px;
+    height: 41px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    border: 1.5px solid $primaryColor;
+    background: none;
+    color: $primaryColor;
+    font-size: 16px;
+    transition: 500ms;
+    &:hover{
+        background-color: $secondaryColor;
+        color: $whiteColor;
+        border: none;
+    }
+}
+@mixin button-2{
+    width: 104px;
+    height: 41px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    // border: 1.5px solid $primaryColor;
+    background-color: $primaryColor;
+    color: $whiteColor;
+    font-size: 16px;
+    transition: 500ms;
+    &:hover{
+        background: none;
+        border: 1.5px solid $primaryColor;
+        color: $primaryColor;
+    }
+}
+// End of mixin for buttons
+
+
+
+// Beginning of media query section 
+@mixin mediaQuery($args...){
+    @if length($args)==1{
+        @media screen and (max-width: nth($args, 1)){
+            @content;
+        }
+    }
+    @if length($args)==2{
+        @media screen and (max-width: nth($args, 1)) and (min-width: nth($args, 2)){
+            @content;
+        }
+    }
+
+}
+
+
+// Beginning of mixin for ipad navbar
+@mixin Navbar-i{
+    padding-inline: $inline-i;
+    // background-color: red;
+    // .logo{}
+    .navlinks{
+        ul{
+            gap: 30px;
+        }
+    }
+    .search{
+        font-size: 25px;
+    }
+    .cta-section{
+        display: none;
+    }
+}
+// End of mixin for ipad navbar
+
+// Beginning of mixin for mobile navbar
+@mixin Navbar-p{
+    padding-inline: $inline-p;
+    .logo{
+        width: 80px;
+        height: 30px;
+    }
+    .navlinks{
+        display: none;
+    }
+    .cta-section{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        font-size: 25px;
+    }
+}
+// End of mixin for mobile navbar
+
+
+// End of media query section 

@@ -32,7 +32,8 @@
 
 @mixin login-form{
     width: 100%;
-    height: 912px;
+    height: auto;
+    padding-block: 60px 140px;
     display: flex;
     align-items: center;
     justify-content: center;

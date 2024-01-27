@@ -152,8 +152,8 @@
             flex-direction: column;
             gap: 32px;
             h2{
-                font-size: 30px;
-                font-weight: 700;
+                font-size: $footerHeading;
+                font-weight: 500;
                 color: $whiteColor;
             }
             ul{
@@ -181,8 +181,8 @@
             // background-color: crimson;
             gap: 32px;
             h2{
-                font-size: 30px;
-                font-weight: 700;
+                font-size: $footerHeading;
+                font-weight: 500;
                 color: $whiteColor;
             }
             .linksection{
@@ -220,6 +220,7 @@
 // End of mixin for laptop footer
 
 // Beginning of mixin for buttons
+
 @mixin button-1{
     width: 104px;
     height: 41px;
@@ -237,6 +238,8 @@
         border: none;
     }
 }
+
+//button with primary color and hover of no backgroundcolor
 @mixin button-2{
     width: 104px;
     height: 41px;
@@ -252,6 +255,7 @@
         background: none;
         border: 1.5px solid $primaryColor;
         color: $primaryColor;
+        cursor: pointer;
     }
 }
 // End of mixin for buttons

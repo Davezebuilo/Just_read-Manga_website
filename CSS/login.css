@@ -124,6 +124,7 @@ header .cta-section .login:hover {
   background: none;
   border: 1.5px solid #1897BF;
   color: #1897BF;
+  cursor: pointer;
 }
 header .hamburger {
   color: #1897BF;
@@ -163,6 +164,169 @@ header .hamburger {
     display: block;
     font-size: 25px;
   }
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+body .blue-floater {
+  position: absolute;
+  right: -20%;
+  z-index: -40;
+  width: 915px;
+  height: 757px;
+  border-radius: 0px 238.5px 0px 0px;
+  background: linear-gradient(232deg, rgba(250, 250, 250, 0) 15.25%, #1897BF 132.98%);
+  -webkit-filter: blur(165px);
+          filter: blur(165px);
+}
+body .backLogo {
+  position: absolute;
+  right: 0%;
+  top: 20%;
+  z-index: -50;
+  width: 900px;
+  height: 800px;
+}
+body .backLogo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.login-form {
+  width: 100%;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.login-form .login-actu {
+  width: 600px;
+  height: 622px;
+  background: #FAFAFA;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 6px 15px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 6px 15px 8px rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.login-form .login-actu h3 {
+  color: #1897BF;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px;
+}
+.login-form .login-actu .components {
+  height: auto;
+  width: auto;
+  margin-top: 70px;
+}
+.login-form .login-actu .components .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.login-form .login-actu .components .inputs input {
+  width: 416px;
+  height: 56px;
+  padding-inline: 25px;
+  border: none;
+  outline: none;
+  background-color: #EEE;
+  border-radius: 10px;
+}
+.login-form .login-actu .components .forgot-remem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 70px;
+  margin-top: 30px;
+}
+.login-form .login-actu .components .forgot-remem a {
+  text-decoration: none;
+  color: #1897BF;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+.login-form .login-actu .components .forgot-remem a p {
+  font-size: 16px;
+  font-weight: 300;
+}
+.login-form .login-actu .components .forgot-remem a:hover {
+  color: #FFC225;
+}
+.login-form .login-actu .components .forgot-remem div label {
+  font-size: 16px;
+  color: #7C7C7C;
+  font-weight: 300;
+}
+.login-form .login-actu .components .cre8-acct {
+  color: #7C7C7C;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 40px;
+}
+.login-form .login-actu .components .cre8-acct span {
+  color: #1897BF;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+.login-form .login-actu .components .cre8-acct span:hover {
+  color: #FFC225;
+  cursor: pointer;
+}
+.login-form .login-actu .components button {
+  width: 104px;
+  height: 41px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #1897BF;
+  color: #FAFAFA;
+  font-size: 16px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  width: 416px;
+  height: 60px;
+  margin-top: 70px;
+}
+.login-form .login-actu .components button:hover {
+  background: none;
+  border: 1.5px solid #1897BF;
+  color: #1897BF;
+  cursor: pointer;
 }
 
 footer {
@@ -259,8 +423,8 @@ footer .hero .stores-f {
   gap: 32px;
 }
 footer .hero .stores-f h2 {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 25px;
+  font-weight: 500;
   color: #FAFAFA;
 }
 footer .hero .stores-f ul {
@@ -295,8 +459,8 @@ footer .hero .qlink-f {
   gap: 32px;
 }
 footer .hero .qlink-f h2 {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 25px;
+  font-weight: 500;
   color: #FAFAFA;
 }
 footer .hero .qlink-f .linksection {

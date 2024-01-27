@@ -1,6 +1,7 @@
 @import "./variables";
 @import "./homemixin";
 @import "./base";
+@import "./loginmixin";
 
 header{
     @include Navbar;
@@ -15,6 +16,14 @@ header{
     // @include mediaQuery(1280px, 1025px){
     //     @include ;
     // }
+}
+
+body{
+    @include body-format;
+}
+
+.login-form{
+    @include login-form;
 }
 
 footer{

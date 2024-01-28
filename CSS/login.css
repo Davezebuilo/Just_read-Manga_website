@@ -29,6 +29,9 @@ header {
   width: 100%;
   height: 89px;
   background-color: #F6FDFF;
+  position: fixed;
+  top: 0;
+  z-index: 50;
 }
 header .logo {
   width: 115px;
@@ -91,8 +94,7 @@ header .cta-section {
   gap: 2rem;
 }
 header .cta-section .register {
-  width: 104px;
-  height: 41px;
+  padding: 12px 30px;
   border-radius: 10px;
   border: none;
   outline: none;
@@ -109,8 +111,7 @@ header .cta-section .register:hover {
   border: none;
 }
 header .cta-section .login {
-  width: 104px;
-  height: 41px;
+  padding: 12px 30px;
   border-radius: 10px;
   border: none;
   outline: none;
@@ -209,6 +210,7 @@ body .backLogo img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 89px;
 }
 .login-form .login-actu {
   width: 600px;
@@ -300,18 +302,19 @@ body .backLogo img {
   font-weight: 300;
   margin-top: 40px;
 }
-.login-form .login-actu .components .cre8-acct span {
+.login-form .login-actu .components .cre8-acct a {
   color: #1897BF;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
+  text-decoration: none;
 }
-.login-form .login-actu .components .cre8-acct span:hover {
+.login-form .login-actu .components .cre8-acct a:hover {
   color: #FFC225;
   cursor: pointer;
+  text-decoration: underline;
 }
 .login-form .login-actu .components button {
-  width: 104px;
-  height: 41px;
+  padding: 12px 30px;
   border-radius: 10px;
   border: none;
   outline: none;

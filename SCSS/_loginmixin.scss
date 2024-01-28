@@ -37,6 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 89px;
 
     .login-actu{
         width: 600px;
@@ -115,13 +116,15 @@
                 font-weight: $fontW-footer;
                 margin-top: 40px;
     
-                span{
+                a{
                     color: $primaryColor;
                     transition: 300ms ease;
+                    text-decoration: none;
 
                     &:hover{
                         color: $secondaryColor;
                         cursor: pointer;
+                        text-decoration: underline;
                     }
                 }
             }

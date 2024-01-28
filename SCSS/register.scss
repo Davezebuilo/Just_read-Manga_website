@@ -1,12 +1,8 @@
 @import "./variables";
 @import "./homemixin";
 @import "./base";
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Lexend', sans-serif;
-}
+@import "./loginmixin";
+
 
 header{
     @include Navbar;
@@ -16,15 +12,21 @@ header{
     @include mediaQuery(767px){
         @include Navbar-p;
     };
+
+    // Laptop1 media query
+    // @include mediaQuery(1280px, 1025px){
+    //     @include ;
+    // }
 }
 
-.herosect{
-    @include herosect;
+body{
+    @include body-format;
+}
+
+.user-register{
+    @include login-form;
 }
 
 footer{
     @include footer;
-    @include mediaQuery(1024px, 768px){
-        @include footer-i;
-    }
 }

@@ -1,0 +1,32 @@
+@import "./variables";
+@import "./homemixin";
+@import "./base";
+@import "./loginmixin";
+
+
+header{
+    @include Navbar;
+    @include mediaQuery(1024px, 768px){
+        @include Navbar-i;
+    }
+    @include mediaQuery(767px){
+        @include Navbar-p;
+    };
+
+    // Laptop1 media query
+    // @include mediaQuery(1280px, 1025px){
+    //     @include ;
+    // }
+}
+
+body{
+    @include body-format;
+}
+
+.user-register{
+    @include login-form;
+}
+
+footer{
+    @include footer;
+}

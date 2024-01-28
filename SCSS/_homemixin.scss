@@ -9,6 +9,9 @@
     width: 100%;
     height: 89px;
     background-color: $backgroundColor;
+    position: fixed;
+    top: 0;
+    z-index: 50;
     .logo{
         // background-color: red;
         width: 115px;
@@ -84,6 +87,118 @@
     }
 }
 // End of mixin for laptop navbar
+
+// Beginning of mixin for hero section
+@mixin herosect{
+    height: 87vh;
+    background-color: $backgroundColor;
+    width: 100%;
+    padding-inline: $inline;
+    margin-top: 89px;
+    .herodiv{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .textarea-h{
+            display: flex;
+            flex-direction: column;
+            gap: 44px;
+            justify-content: center;
+            // padding-block: 2rem;
+            width: 50%;
+            // background-color: brown;
+            h1{
+                font-size: $xlfont;
+                line-height: 60px;
+                color: $primaryColor;
+                padding-right: 2rem;
+                span{
+                    color: $secondaryColor;
+                }
+            }
+            .ratings-h{
+                width: 100%;
+                height: 90px;
+                // background-color: brown;
+                display: flex;
+                gap: 85px;
+                div{
+                    // background-color: brown;
+                    width: 90px;
+                    display: grid;
+                    place-items: center;
+                    p{
+                        text-align: center;
+                        // line-height: 2;
+                        font-size: $navFont;
+                        color: $grayColor;
+                        span{
+                            font-size: $largefont;
+                        }
+                    }
+                }
+            }
+            .cta-h{
+                button{
+                    @include button-2;
+                    // padding: 20px;
+                }
+            }
+            .socials-h{
+                display: flex;
+                // background-color: brown;
+                gap: 50px;
+                div{
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    display: grid;
+                    place-items: center;
+                    background-color: $primaryColor;
+                    color: $whiteColor;
+                    cursor: pointer;
+                    p{
+                        font-size: $medFont;
+                    }
+                }
+            }
+        }
+        .imgsection-h{
+            // background-color: brown;
+            width: 50%;
+            position: relative;
+            .jujutsu-h{
+                width: 315px;
+                height: 427px;
+                position: absolute;
+                top: 32px;
+                right: 0;
+                border-radius: 10px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .stone-h{
+                width: 250px;
+                height: 338px;
+                border-radius: 15px;
+                overflow: hidden;
+                position: absolute;
+                top: 181px;
+                left: 139px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+} 
+// End of mixin for hero section 
 
 
 // Beginning of mixin for laptop footer
@@ -220,8 +335,7 @@
 
 // Beginning of mixin for buttons
 @mixin button-1{
-    width: 104px;
-    height: 41px;
+    padding: 12px 30px;
     border-radius: 10px;
     border: none;
     outline: none;
@@ -237,8 +351,7 @@
     }
 }
 @mixin button-2{
-    width: 104px;
-    height: 41px;
+    padding: 12px 30px;
     border-radius: 10px;
     border: none;
     outline: none;
@@ -311,6 +424,39 @@
     }
 }
 // End of mixin for mobile navbar
+
+// Beginning of mixin for ipad footer 
+@mixin footer-i{
+    // background-color: brown;
+    height: 700px;
+    padding-inline: $inline-i;
+    // .hero{
+    //     // background-color: brown;
+    //     height: 650px;
+    //     width: 100%;
+    //     display: grid;
+    //     grid-template-columns: repeat(2,1fr);
+    //     // place-items: center;
+    //     // gap: 1rem;
+    //     .logo-socials{
+    //         justify-content: space-between;
+    //         height: 200px;
+    //     }
+    //     .qlink-f{
+    //         width: 100%;
+    //         // background-color: brown;
+    //         justify-content: space-between;
+    //         display: grid;
+    //         grid-column: 1/3;
+    //         .linksection{
+    //             justify-content: space-between;
+    //             width: 100%;
+    //             // background-color: brown;
+    //         }
+    //     }
+    // }
+}
+// End of mixin for ipad footer 
 
 
 // End of media query section 

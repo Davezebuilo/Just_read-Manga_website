@@ -17,6 +17,13 @@ header{
     };
 }
 
+.herosect{
+    @include herosect;
+}
+
 footer{
     @include footer;
+    @include mediaQuery(1024px, 768px){
+        @include footer-i;
+    }
 }

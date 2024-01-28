@@ -20,6 +20,9 @@ header {
   width: 100%;
   height: 89px;
   background-color: #F6FDFF;
+  position: fixed;
+  top: 0;
+  z-index: 50;
 }
 header .logo {
   width: 115px;
@@ -82,8 +85,7 @@ header .cta-section {
   gap: 2rem;
 }
 header .cta-section .register {
-  width: 104px;
-  height: 41px;
+  padding: 12px 30px;
   border-radius: 10px;
   border: none;
   outline: none;
@@ -100,8 +102,7 @@ header .cta-section .register:hover {
   border: none;
 }
 header .cta-section .login {
-  width: 104px;
-  height: 41px;
+  padding: 12px 30px;
   border-radius: 10px;
   border: none;
   outline: none;
@@ -154,6 +155,136 @@ header .hamburger {
     display: block;
     font-size: 25px;
   }
+}
+
+.herosect {
+  height: 87vh;
+  background-color: #F6FDFF;
+  width: 100%;
+  padding-inline: 109px;
+  margin-top: 89px;
+}
+.herosect .herodiv {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.herosect .herodiv .textarea-h {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 44px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+.herosect .herodiv .textarea-h h1 {
+  font-size: 45px;
+  line-height: 60px;
+  color: #1897BF;
+  padding-right: 2rem;
+}
+.herosect .herodiv .textarea-h h1 span {
+  color: #FFC225;
+}
+.herosect .herodiv .textarea-h .ratings-h {
+  width: 100%;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 85px;
+}
+.herosect .herodiv .textarea-h .ratings-h div {
+  width: 90px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+.herosect .herodiv .textarea-h .ratings-h div p {
+  text-align: center;
+  font-size: 20px;
+  color: #7C7C7C;
+}
+.herosect .herodiv .textarea-h .ratings-h div p span {
+  font-size: 30px;
+}
+.herosect .herodiv .textarea-h .cta-h button {
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #1897BF;
+  color: #FAFAFA;
+  font-size: 16px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+.herosect .herodiv .textarea-h .cta-h button:hover {
+  background: none;
+  border: 1.5px solid #1897BF;
+  color: #1897BF;
+}
+.herosect .herodiv .textarea-h .socials-h {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+.herosect .herodiv .textarea-h .socials-h div {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: #1897BF;
+  color: #FAFAFA;
+  cursor: pointer;
+}
+.herosect .herodiv .textarea-h .socials-h div p {
+  font-size: 18px;
+}
+.herosect .herodiv .imgsection-h {
+  width: 50%;
+  position: relative;
+}
+.herosect .herodiv .imgsection-h .jujutsu-h {
+  width: 315px;
+  height: 427px;
+  position: absolute;
+  top: 32px;
+  right: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.herosect .herodiv .imgsection-h .jujutsu-h img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.herosect .herodiv .imgsection-h .stone-h {
+  width: 250px;
+  height: 338px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: absolute;
+  top: 181px;
+  left: 139px;
+}
+.herosect .herodiv .imgsection-h .stone-h img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
@@ -321,4 +452,10 @@ footer .copyright {
 }
 footer .copyright p {
   font-size: 16px;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  footer {
+    height: 700px;
+    padding-inline: 35px;
+  }
 }

@@ -105,8 +105,7 @@ header .cta-section .register {
   padding: 12px 30px;
   border-radius: 10px;
   border: none;
-  outline: none;
-  border: 1.5px solid #1897BF;
+  outline: 1.5px solid #1897BF;
   background: none;
   color: #1897BF;
   font-size: 16px;
@@ -116,7 +115,7 @@ header .cta-section .register {
 header .cta-section .register:hover {
   background-color: #FFC225;
   color: #FAFAFA;
-  border: none;
+  outline: none;
 }
 header .cta-section .login {
   padding: 12px 30px;
@@ -131,7 +130,7 @@ header .cta-section .login {
 }
 header .cta-section .login:hover {
   background: none;
-  border: 1.5px solid #1897BF;
+  outline: 1.5px solid #1897BF;
   color: #1897BF;
   cursor: pointer;
 }
@@ -247,7 +246,7 @@ header .hamburger {
 }
 .herosect .herodiv .textarea-h .cta-h button:hover {
   background: none;
-  border: 1.5px solid #1897BF;
+  outline: 1.5px solid #1897BF;
   color: #1897BF;
   cursor: pointer;
 }

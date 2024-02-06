@@ -340,8 +340,8 @@
     padding: 12px 30px;
     border-radius: 10px;
     border: none;
-    outline: none;
-    border: 1.5px solid $primaryColor;
+    // outline: none;
+    outline: 1.5px solid $primaryColor;
     background: none;
     color: $primaryColor;
     font-size: 16px;
@@ -349,7 +349,7 @@
     &:hover{
         background-color: $secondaryColor;
         color: $whiteColor;
-        border: none;
+        outline: none;
     }
 }
 
@@ -366,7 +366,7 @@
     transition: 500ms;
     &:hover{
         background: none;
-        border: 1.5px solid $primaryColor;
+        outline: 1.5px solid $primaryColor;
         color: $primaryColor;
         cursor: pointer;
     }

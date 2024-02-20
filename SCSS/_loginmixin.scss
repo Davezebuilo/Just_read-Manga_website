@@ -52,7 +52,7 @@
         justify-content: center;
 
         h3{
-            color: #1897BF;
+            color: $primaryColor;
             font-size: 25px;
             font-style: normal;
             font-weight: 500;
@@ -201,6 +201,214 @@
 
         &:hover{
             background-color: #D1D1D1;
+        }
+    }
+}
+
+//mixin for the plans screen
+@mixin plans-actu{
+    // background-color: aqua;
+    display: grid;
+    place-items: center;
+
+    h3{
+        color: $primaryColor;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 60px;
+    }
+
+    .plans{
+        width: 1082px;
+        height: auto;
+        // background-color: brown;
+        margin-top: 30px;
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 53px;
+
+        >div{
+            width: 318px;
+            height: 546px;
+            border-radius: 20px;
+            background-color: gray;
+        }
+
+        .starter-plan{
+            background-color: $whiteColor;
+            outline: 2.5px solid $primaryColor;
+            display: grid;
+            place-items: center;
+            padding-block: 60px 40px;
+            position: relative;
+
+            svg{
+                position: absolute;
+                top: -7%;
+                right: -10%;
+            }
+
+            .items{
+                height: 272px;
+                // background-color: aqua;
+                display: grid;
+                place-items: center;
+            }
+
+            h4{
+                color: $primaryColor;
+                font-size: 25px;
+            }
+
+            p{
+                font-size: 20px;
+                font-weight: 300;
+            }
+
+            ul{
+                list-style: none;
+                display: grid;
+                gap: 15px;
+                li{
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+
+            a{
+                text-decoration: none;
+
+                button{
+                    width: 250px;
+                    height: 50px;
+                    @include button-2;
+                }
+            }
+        }
+
+        .silver-plan{
+            background-color: $whiteColor;
+            outline: 2.5px solid $grayColor;
+            display: grid;
+            place-items: center;
+            padding-block: 60px 40px;
+            position: relative;
+
+            svg{
+                position: absolute;
+                top: -7%;
+                right: -10%;
+            }
+
+            .items{
+                height: 272px;
+                // background-color: aqua;
+                display: grid;
+                place-items: center;
+            }
+
+            h4{
+                color: $grayColor;
+                font-size: 25px;
+            }
+
+            p{
+                font-size: 20px;
+                font-weight: 300;
+            }
+
+            ul{
+                list-style: none;
+                display: grid;
+                gap: 15px;
+                li{
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+
+            a{
+                text-decoration: none;
+
+                button{
+                    width: 250px;
+                    height: 50px;
+                    @include button-2;
+                    background-color: $grayColor;
+
+                    &:hover{
+                        color: $grayColor;
+                        outline: 1px solid $grayColor;
+                    }
+                }
+            }
+        }
+
+        .gold-plan{
+            background-color: $whiteColor;
+            outline: 2.5px solid $secondaryColor;
+            display: grid;
+            place-items: center;
+            padding-block: 60px 40px;
+
+            .items{
+                height: 272px;
+                // background-color: aqua;
+                display: grid;
+                place-items: center;
+            }
+
+            h4{
+                color: $secondaryColor;
+                font-size: 25px;
+            }
+
+            p{
+                font-size: 20px;
+                font-weight: 300;
+            }
+
+            ul{
+                list-style: none;
+                display: grid;
+                gap: 15px;
+                li{
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+
+            a{
+                text-decoration: none;
+
+                button{
+                    width: 250px;
+                    height: 50px;
+                    @include button-2;
+                    background-color: $secondaryColor;
+
+                    &:hover{
+                        color: $secondaryColor;
+                        outline: 1px solid $secondaryColor;
+                    }
+                }
+            }
+        }
+    }
+
+
+    span{
+        // background-color: aqua;
+        width: 50%;
+        margin-top: 30px;
+
+        p{
+            color: $redColor;
+            font-size: 16px;
+            font-weight: 300;
+            text-align: center;
         }
     }
 }

@@ -15,3 +15,7 @@ body{
 footer{
     @include footer;
 }
+
+.plans-actu{
+    @include plans-actu;
+}

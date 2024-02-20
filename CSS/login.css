@@ -84,7 +84,7 @@ body .backLogo img {
 }
 .login-form .login-actu h3 {
   color: #1897BF;
-  font-size: 30px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 500;
   line-height: 60px;
@@ -197,6 +197,50 @@ body .backLogo img {
   outline: 1.5px solid #1897BF;
   color: #1897BF;
   cursor: pointer;
+}
+.login-form .login-actu button {
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #1897BF;
+  color: #FAFAFA;
+  font-size: 16px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  width: 416px;
+  height: 60px;
+  margin-top: 50px;
+}
+.login-form .login-actu button:hover {
+  background: none;
+  outline: 1.5px solid #1897BF;
+  color: #1897BF;
+  cursor: pointer;
+}
+.login-form .login-actu .cate-housing {
+  width: auto;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 40px;
+}
+.login-form .login-actu .cate-housing div {
+  width: 144px;
+  height: 100px;
+  background-color: #EEE;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+.login-form .login-actu .cate-housing div:hover {
+  background-color: #D1D1D1;
 }
 
 footer {

@@ -410,3 +410,227 @@ footer .copyright {
 footer .copyright p {
   font-size: 16px;
 }
+
+.plans-actu {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+.plans-actu h3 {
+  color: #1897BF;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px;
+}
+.plans-actu .plans {
+  width: 1082px;
+  height: auto;
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-columns: 1fr 53px 1fr 53px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 53px;
+}
+.plans-actu .plans > div {
+  width: 318px;
+  height: 546px;
+  border-radius: 20px;
+  background-color: gray;
+}
+.plans-actu .plans .starter-plan {
+  background-color: #FAFAFA;
+  outline: 2.5px solid #1897BF;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding-block: 60px 40px;
+  position: relative;
+}
+.plans-actu .plans .starter-plan svg {
+  position: absolute;
+  top: -7%;
+  right: -10%;
+}
+.plans-actu .plans .starter-plan .items {
+  height: 272px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+.plans-actu .plans .starter-plan h4 {
+  color: #1897BF;
+  font-size: 25px;
+}
+.plans-actu .plans .starter-plan p {
+  font-size: 20px;
+  font-weight: 300;
+}
+.plans-actu .plans .starter-plan ul {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  gap: 15px;
+}
+.plans-actu .plans .starter-plan ul li {
+  font-size: 14px;
+  font-weight: 300;
+}
+.plans-actu .plans .starter-plan a {
+  text-decoration: none;
+}
+.plans-actu .plans .starter-plan a button {
+  width: 250px;
+  height: 50px;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #1897BF;
+  color: #FAFAFA;
+  font-size: 16px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+.plans-actu .plans .starter-plan a button:hover {
+  background: none;
+  outline: 1.5px solid #1897BF;
+  color: #1897BF;
+  cursor: pointer;
+}
+.plans-actu .plans .silver-plan {
+  background-color: #FAFAFA;
+  outline: 2.5px solid #7C7C7C;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding-block: 60px 40px;
+  position: relative;
+}
+.plans-actu .plans .silver-plan svg {
+  position: absolute;
+  top: -7%;
+  right: -10%;
+}
+.plans-actu .plans .silver-plan .items {
+  height: 272px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+.plans-actu .plans .silver-plan h4 {
+  color: #7C7C7C;
+  font-size: 25px;
+}
+.plans-actu .plans .silver-plan p {
+  font-size: 20px;
+  font-weight: 300;
+}
+.plans-actu .plans .silver-plan ul {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  gap: 15px;
+}
+.plans-actu .plans .silver-plan ul li {
+  font-size: 14px;
+  font-weight: 300;
+}
+.plans-actu .plans .silver-plan a {
+  text-decoration: none;
+}
+.plans-actu .plans .silver-plan a button {
+  width: 250px;
+  height: 50px;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #1897BF;
+  color: #FAFAFA;
+  font-size: 16px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  background-color: #7C7C7C;
+}
+.plans-actu .plans .silver-plan a button:hover {
+  background: none;
+  outline: 1.5px solid #1897BF;
+  color: #1897BF;
+  cursor: pointer;
+}
+.plans-actu .plans .silver-plan a button:hover {
+  color: #7C7C7C;
+  outline: 1px solid #7C7C7C;
+}
+.plans-actu .plans .gold-plan {
+  background-color: #FAFAFA;
+  outline: 2.5px solid #FFC225;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding-block: 60px 40px;
+}
+.plans-actu .plans .gold-plan .items {
+  height: 272px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+.plans-actu .plans .gold-plan h4 {
+  color: #FFC225;
+  font-size: 25px;
+}
+.plans-actu .plans .gold-plan p {
+  font-size: 20px;
+  font-weight: 300;
+}
+.plans-actu .plans .gold-plan ul {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  gap: 15px;
+}
+.plans-actu .plans .gold-plan ul li {
+  font-size: 14px;
+  font-weight: 300;
+}
+.plans-actu .plans .gold-plan a {
+  text-decoration: none;
+}
+.plans-actu .plans .gold-plan a button {
+  width: 250px;
+  height: 50px;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #1897BF;
+  color: #FAFAFA;
+  font-size: 16px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  background-color: #FFC225;
+}
+.plans-actu .plans .gold-plan a button:hover {
+  background: none;
+  outline: 1.5px solid #1897BF;
+  color: #1897BF;
+  cursor: pointer;
+}
+.plans-actu .plans .gold-plan a button:hover {
+  color: #FFC225;
+  outline: 1px solid #FFC225;
+}
+.plans-actu span {
+  width: 50%;
+  margin-top: 30px;
+}
+.plans-actu span p {
+  color: #FF5247;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}

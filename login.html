@@ -59,19 +59,23 @@
         <!-- The actual login form -->
         <div class="login-actu">
             <h3>Welcome back</h3>
-            <form class="components">
+            <form class="components" id="login-form">
                 <div class="inputs">
+                    <!-- <label for="email-login"></label> -->
                     <input type="email" id="email-login" placeholder="Email">
+                    <p id="invalid-email"><i class="ri-close-circle-line"></i>h</p>
+                    <!-- <label for="password-login"></label> -->
                     <input type="password" name="" id="password-login" placeholder="Password">
+                    <p id="incorrect-password"></p>
                 </div>
                 <div class="forgot-remem">
                     <a href="#"><p>Forgot password?</p></a>
                     <div>
                         <input type="checkbox" name="" id="remeber-me">
-                        <label>Remember me</label>
+                        <label  for="remeber-me">Remember me</label>
                     </div>
                 </div>
-                <a href="#">
+                <a href="./index.html">
                     <button type="submit">
                         login
                     </button>
@@ -148,5 +152,7 @@
         </div>
     </footer>
     <!-- End of footer -->
+
+    <script src="./JS/loginValidate.js"></script>
 </body>
 </html>

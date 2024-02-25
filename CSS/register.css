@@ -107,6 +107,17 @@ body .backLogo img {
           align-items: center;
   gap: 20px;
 }
+.user-register .login-actu form .inputs #invalid-email,
+.user-register .login-actu form .inputs #incorrect-password {
+  font-weight: 500;
+  color: #FF5247;
+  font-size: 12px;
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
+  display: none;
+  width: 85%;
+}
 .user-register .login-actu form .inputs input {
   width: 416px;
   height: 56px;

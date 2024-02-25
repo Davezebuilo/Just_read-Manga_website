@@ -69,7 +69,17 @@
                 flex-direction: column;
                 align-items: center;
                 gap: 20px;
-    
+
+                #invalid-email,
+                #incorrect-password{
+                    font-weight: 500;
+                    color: $redColor;
+                    font-size: 12px;
+                    align-self: left;
+                    display: none;
+                    width: 85%;
+                }
+
                 input{
                     @include filled-inputs();
                 }

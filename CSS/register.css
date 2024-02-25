@@ -161,20 +161,20 @@ body .backLogo img {
   transition: 300ms ease;
 }
 .user-register .login-actu form .forgot-remem a p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
 }
 .user-register .login-actu form .forgot-remem a:hover {
   color: #FFC225;
 }
 .user-register .login-actu form .forgot-remem div label {
-  font-size: 16px;
+  font-size: 14px;
   color: #7C7C7C;
   font-weight: 300;
 }
 .user-register .login-actu form .cre8-acct {
   color: #7C7C7C;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   margin-top: 20px;
 }
@@ -331,10 +331,10 @@ footer .hero .logo-socials .socials-f .t-f div {
   place-items: center;
 }
 footer .hero .logo-socials .socials-f .t-f div p i {
-  font-size: 16px;
+  font-size: 14px;
 }
 footer .hero .logo-socials .socials-f .t-f h5 {
-  font-size: 16px;
+  font-size: 14px;
   color: #FAFAFA;
 }
 footer .hero .stores-f {
@@ -348,7 +348,7 @@ footer .hero .stores-f {
   gap: 32px;
 }
 footer .hero .stores-f h2 {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   color: #FAFAFA;
 }
@@ -359,7 +359,7 @@ footer .hero .stores-f ul li {
   margin-bottom: 25px;
 }
 footer .hero .stores-f ul li p {
-  font-size: 16px;
+  font-size: 14px;
   color: #FAFAFA;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -384,7 +384,7 @@ footer .hero .qlink-f {
   gap: 32px;
 }
 footer .hero .qlink-f h2 {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   color: #FAFAFA;
 }
@@ -401,7 +401,7 @@ footer .hero .qlink-f .linksection ul li {
   margin-bottom: 25px;
 }
 footer .hero .qlink-f .linksection ul li a {
-  font-size: 16px;
+  font-size: 14px;
   color: #FAFAFA;
   text-decoration: none;
 }
@@ -419,5 +419,5 @@ footer .copyright {
   color: #FAFAFA;
 }
 footer .copyright p {
-  font-size: 16px;
+  font-size: 14px;
 }

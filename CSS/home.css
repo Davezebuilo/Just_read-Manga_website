@@ -71,7 +71,7 @@ header .navlinks ul li {
 header .navlinks ul li a {
   text-decoration: none;
   color: #1897BF;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Lexend", sans-serif;
   position: relative;
   overflow: hidden;
@@ -92,7 +92,7 @@ header .navlinks ul li a:hover::before {
 }
 header .search {
   color: #1897BF;
-  font-size: 20px;
+  font-size: 16px;
   cursor: pointer;
 }
 header .cta-section {
@@ -136,7 +136,7 @@ header .cta-section .login:hover {
 }
 header .hamburger {
   color: #1897BF;
-  font-size: 20px;
+  font-size: 16px;
   cursor: pointer;
   display: none;
 }
@@ -227,7 +227,7 @@ header .hamburger {
 }
 .herosect .herodiv .textarea-h .ratings-h div p {
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   color: #7C7C7C;
 }
 .herosect .herodiv .textarea-h .ratings-h div p span {
@@ -382,10 +382,10 @@ footer .hero .logo-socials .socials-f .t-f div {
   place-items: center;
 }
 footer .hero .logo-socials .socials-f .t-f div p i {
-  font-size: 16px;
+  font-size: 14px;
 }
 footer .hero .logo-socials .socials-f .t-f h5 {
-  font-size: 16px;
+  font-size: 14px;
   color: #FAFAFA;
 }
 footer .hero .stores-f {
@@ -399,7 +399,7 @@ footer .hero .stores-f {
   gap: 32px;
 }
 footer .hero .stores-f h2 {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   color: #FAFAFA;
 }
@@ -410,7 +410,7 @@ footer .hero .stores-f ul li {
   margin-bottom: 25px;
 }
 footer .hero .stores-f ul li p {
-  font-size: 16px;
+  font-size: 14px;
   color: #FAFAFA;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,7 +435,7 @@ footer .hero .qlink-f {
   gap: 32px;
 }
 footer .hero .qlink-f h2 {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   color: #FAFAFA;
 }
@@ -452,7 +452,7 @@ footer .hero .qlink-f .linksection ul li {
   margin-bottom: 25px;
 }
 footer .hero .qlink-f .linksection ul li a {
-  font-size: 16px;
+  font-size: 14px;
   color: #FAFAFA;
   text-decoration: none;
 }
@@ -470,7 +470,7 @@ footer .copyright {
   color: #FAFAFA;
 }
 footer .copyright p {
-  font-size: 16px;
+  font-size: 14px;
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   footer {

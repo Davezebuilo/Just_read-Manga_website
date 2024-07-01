@@ -10,10 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600&family=Playball&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/just-read-favicon.svg" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 </head>
 <body>
     <!--Beginning of laptop navbar  -->
-    <header>
+    <header id="laptop-nav">
         <div class="hamburger">
             <p>
                 <i class="ri-menu-line"></i>
@@ -50,7 +51,7 @@
     <section class="herosect">
         <div class="herodiv">
             <div class="textarea-h">
-                <h1>Enjoy easy access to your favourite manga comics <span>everywhere</span></h1>
+                <h1>Enjoy easy access to your favourite manga comics <span id="heroTxt"></span></h1>
                 <div class="ratings-h">
                     <div>
                         <p>Over <span>20,000+</span> comics</p>
@@ -75,11 +76,26 @@
                 </div>
             </div>
             <div class="imgsection-h">
-                <div class="jujutsu-h">
+                <div class="jujutsu-h" id="imagesA">
+                    <img src="img/Dragon-ball-z 1.webp" alt="">
+                </div>
+                <div class="jujutsu-h" id="imagesB">
+                    <img src="img/black-clover 1.jpg" alt="">
+                </div>
+                <div class="jujutsu-h" id="imagesC">
+                    <img src="img/pluto 1.jpeg" alt="">
+                </div>
+                <div class="jujutsu-h" id="imagesD">
                     <img src="img/Jujutsu_Kaisen 3.webp" alt="">
                 </div>
-                <div class="stone-h">
+                <div class="stone-h" id="sml1">
                     <img src="img/Rectangle 438.jpg" alt="">
+                </div>
+                <div class="stone-h" id="sml2">
+                    <img src="img/Boku_no_Hero_Academia_1.png" alt="">
+                </div>
+                <div class="stone-h" id="sml3">
+                    <img src="img/naruto-shippuden-.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -152,5 +168,7 @@
         </div>
     </footer>
     <!-- End of footer -->
+
+    <script src="./JS/imageflicker.js"></script>
 </body>
 </html>

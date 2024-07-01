@@ -7,15 +7,16 @@
     align-items: center;
     padding-inline: $inline;
     width: 100%;
-    height: 89px;
+    height: auto;
     background-color: $backgroundColor;
+    padding-block: 15px;
     position: fixed;
     top: 0;
     z-index: 50;
     .logo{
         // background-color: red;
-        width: 115px;
-        height: 46px;
+        width: 10%;
+        height: 10%;
         cursor: pointer;
         .logowrap{
             width: 100%;
@@ -105,16 +106,18 @@
             gap: 44px;
             justify-content: center;
             // padding-block: 2rem;
-            width: 50%;
-            // background-color: brown;
+            width: 60%;
+            // background-color: aqua;
             h1{
                 font-size: $xlfont;
                 line-height: 60px;
                 color: $primaryColor;
                 padding-right: 2rem;
+                width: 80%;
                 span{
                     color: $secondaryColor;
                 }
+                // background-color: brown;
             }
             .ratings-h{
                 width: 100%;
@@ -165,20 +168,22 @@
         }
         .imgsection-h{
             // background-color: brown;
-            width: 50%;
+            width: 40%;
             position: relative;
             .jujutsu-h{
                 width: 315px;
                 height: 427px;
                 position: absolute;
                 top: 32px;
-                right: 0;
+                right: 30px;
                 border-radius: 10px;
                 overflow: hidden;
+                transition: 1s ease all;
                 img{
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    transition: 1s ease all;
                 }
             }
             .stone-h{
@@ -188,7 +193,7 @@
                 overflow: hidden;
                 position: absolute;
                 top: 181px;
-                left: 139px;
+                left: 9px;
                 img{
                     width: 100%;
                     height: 100%;

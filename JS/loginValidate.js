@@ -19,8 +19,10 @@ loginForm.addEventListener('submit', (e)=>{
             email.style.outline = '1px solid #1897BF';
             email.style.color = '#101010';
         })
+    }else {
+        window.location.href = "index.html";
     }
-
+    
     if (password.value === '' || password.value === null){
         e.preventDefault();
         passwordValidate.innerText = 'Password cannot be empty';
@@ -34,9 +36,7 @@ loginForm.addEventListener('submit', (e)=>{
             password.style.outline = '1px solid #1897BF';
             password.style.color = '#101010';
         })
-    }
-
-    if (password.length <= 6){
+    }else if (password.length <= 6){
         e.preventDefault();
         passwordValidate.innerText = 'Password must be more than six characters';
         // messages.push('Password cannot be empty')
@@ -49,9 +49,7 @@ loginForm.addEventListener('submit', (e)=>{
             password.style.outline = '1px solid #1897BF';
             password.style.color = '#101010';
         })
-    }
-
-    if (password.value === 'password' || password.value === 'Password' || password.value === 'PASSWORD'){
+    }else if (password.value === 'password' || password.value === 'Password' || password.value === 'PASSWORD'){
         e.preventDefault();
         passwordValidate.innerText = 'Password cannot be Password, password or PASSWORD';
         // messages.push('Password cannot be Password, password or PASSWORD')
@@ -64,6 +62,8 @@ loginForm.addEventListener('submit', (e)=>{
             password.style.outline = '1px solid #1897BF';
             password.style.color = '#101010';
         })
+    }else {
+        window.location.href = "index.html";
     }
 
     // window.location.href = "./index.html";

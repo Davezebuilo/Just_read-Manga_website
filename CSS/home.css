@@ -33,17 +33,18 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-inline: 109px;
+  padding-inline: 70px;
   width: 100%;
-  height: 89px;
+  height: auto;
   background-color: #F6FDFF;
+  padding-block: 15px;
   position: fixed;
   top: 0;
   z-index: 50;
 }
 header .logo {
-  width: 115px;
-  height: 46px;
+  width: 10%;
+  height: 10%;
   cursor: pointer;
 }
 header .logo .logowrap {
@@ -178,7 +179,7 @@ header .hamburger {
   height: 87vh;
   background-color: #F6FDFF;
   width: 100%;
-  padding-inline: 109px;
+  padding-inline: 70px;
   margin-top: 89px;
 }
 .herosect .herodiv {
@@ -200,13 +201,14 @@ header .hamburger {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 50%;
+  width: 60%;
 }
 .herosect .herodiv .textarea-h h1 {
   font-size: 45px;
   line-height: 60px;
   color: #1897BF;
   padding-right: 2rem;
+  width: 80%;
 }
 .herosect .herodiv .textarea-h h1 span {
   color: #FFC225;
@@ -271,7 +273,7 @@ header .hamburger {
   font-size: 18px;
 }
 .herosect .herodiv .imgsection-h {
-  width: 50%;
+  width: 40%;
   position: relative;
 }
 .herosect .herodiv .imgsection-h .jujutsu-h {
@@ -279,15 +281,19 @@ header .hamburger {
   height: 427px;
   position: absolute;
   top: 32px;
-  right: 0;
+  right: 30px;
   border-radius: 10px;
   overflow: hidden;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
 }
 .herosect .herodiv .imgsection-h .jujutsu-h img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
 }
 .herosect .herodiv .imgsection-h .stone-h {
   width: 250px;
@@ -296,7 +302,7 @@ header .hamburger {
   overflow: hidden;
   position: absolute;
   top: 181px;
-  left: 139px;
+  left: 9px;
 }
 .herosect .herodiv .imgsection-h .stone-h img {
   width: 100%;
@@ -309,7 +315,7 @@ footer {
   width: 100%;
   height: 400px;
   background-color: #1897BF;
-  padding-inline: 109px;
+  padding-inline: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

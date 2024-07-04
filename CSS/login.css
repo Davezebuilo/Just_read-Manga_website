@@ -118,6 +118,40 @@ body .backLogo img {
   display: none;
   width: 85%;
 }
+.login-form .login-actu form .inputs .user-password {
+  width: 100%;
+  height: 56px;
+  position: relative;
+}
+.login-form .login-actu form .inputs .user-password input {
+  width: 416px;
+  height: 56px;
+  padding-inline: 25px;
+  border: none;
+  outline: none;
+  background-color: #EEE;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+}
+.login-form .login-actu form .inputs .user-password input:focus {
+  outline: 1px solid #1897BF;
+}
+.login-form .login-actu form .inputs .user-password > button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  padding: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.login-form .login-actu form .inputs .user-password > button i {
+  font-size: 22px;
+  font-weight: 400;
+  color: #7C7C7C;
+}
 .login-form .login-actu form .inputs input {
   width: 416px;
   height: 56px;
@@ -130,19 +164,26 @@ body .backLogo img {
 .login-form .login-actu form .inputs input:focus {
   outline: 1px solid #1897BF;
 }
-.login-form .login-actu form .inputs #password-login,
-.login-form .login-actu form .inputs #password-register,
-.login-form .login-actu form .inputs #password-confirm {
-  padding-right: 30px;
-  background-repeat: no-repeat;
-  background-position: 95%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='rgba(124,124,124,1)'%3E%3Cpath d='M1.18164 12C2.12215 6.87976 6.60812 3 12.0003 3C17.3924 3 21.8784 6.87976 22.8189 12C21.8784 17.1202 17.3924 21 12.0003 21C6.60812 21 2.12215 17.1202 1.18164 12ZM12.0003 17C14.7617 17 17.0003 14.7614 17.0003 12C17.0003 9.23858 14.7617 7 12.0003 7C9.23884 7 7.00026 9.23858 7.00026 12C7.00026 14.7614 9.23884 17 12.0003 17ZM12.0003 15C10.3434 15 9.00026 13.6569 9.00026 12C9.00026 10.3431 10.3434 9 12.0003 9C13.6571 9 15.0003 10.3431 15.0003 12C15.0003 13.6569 13.6571 15 12.0003 15Z'%3E%3C/path%3E%3C/svg%3E");
-  background-size: 20px;
+.login-form .login-actu form a button {
+  padding: 12px 30px;
+  border-radius: 10px;
+  outline: none;
+  border: 1.5px solid #1897BF;
+  background-color: #1897BF;
+  color: #FAFAFA;
+  font-size: 14px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  width: 100%;
+  height: 60px;
+  margin-top: 50px;
 }
-.login-form .login-actu form .inputs #password-login:hover,
-.login-form .login-actu form .inputs #password-register:hover,
-.login-form .login-actu form .inputs #password-confirm:hover {
+.login-form .login-actu form a button:hover {
+  border: 1.5px solid #1aa5cf;
   cursor: pointer;
+  -webkit-box-shadow: 0px 3px 6px rgba(24, 152, 191, 0.3843137255);
+          box-shadow: 0px 3px 6px rgba(24, 152, 191, 0.3843137255);
+  background-color: #1aa5cf;
 }
 .login-form .login-actu form .forgot-remem {
   display: -webkit-box;
@@ -151,8 +192,11 @@ body .backLogo img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 30px;
+  width: 100%;
 }
 .login-form .login-actu form .forgot-remem a {
   text-decoration: none;
@@ -188,46 +232,6 @@ body .backLogo img {
   color: #FFC225;
   cursor: pointer;
   text-decoration: underline;
-}
-.login-form .login-actu form button {
-  padding: 12px 30px;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  background-color: #1897BF;
-  color: #FAFAFA;
-  font-size: 16px;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  width: 416px;
-  height: 60px;
-  margin-top: 50px;
-}
-.login-form .login-actu form button:hover {
-  background: none;
-  outline: 1.5px solid #1897BF;
-  color: #1897BF;
-  cursor: pointer;
-}
-.login-form .login-actu button {
-  padding: 12px 30px;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  background-color: #1897BF;
-  color: #FAFAFA;
-  font-size: 16px;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  width: 416px;
-  height: 60px;
-  margin-top: 50px;
-}
-.login-form .login-actu button:hover {
-  background: none;
-  outline: 1.5px solid #1897BF;
-  color: #1897BF;
-  cursor: pointer;
 }
 .login-form .login-actu .cate-housing {
   width: auto;
@@ -497,19 +501,20 @@ footer .copyright p {
   height: 50px;
   padding: 12px 30px;
   border-radius: 10px;
-  border: none;
   outline: none;
+  border: 1.5px solid #1897BF;
   background-color: #1897BF;
   color: #FAFAFA;
-  font-size: 16px;
+  font-size: 14px;
   -webkit-transition: 500ms;
   transition: 500ms;
 }
 .plans-actu .plans .starter-plan a button:hover {
-  background: none;
-  outline: 1.5px solid #1897BF;
-  color: #1897BF;
+  border: 1.5px solid #1aa5cf;
   cursor: pointer;
+  -webkit-box-shadow: 0px 3px 6px rgba(24, 152, 191, 0.3843137255);
+          box-shadow: 0px 3px 6px rgba(24, 152, 191, 0.3843137255);
+  background-color: #1aa5cf;
 }
 .plans-actu .plans .silver-plan {
   background-color: #FAFAFA;
@@ -557,20 +562,21 @@ footer .copyright p {
   height: 50px;
   padding: 12px 30px;
   border-radius: 10px;
-  border: none;
   outline: none;
+  border: 1.5px solid #1897BF;
   background-color: #1897BF;
   color: #FAFAFA;
-  font-size: 16px;
+  font-size: 14px;
   -webkit-transition: 500ms;
   transition: 500ms;
   background-color: #7C7C7C;
 }
 .plans-actu .plans .silver-plan a button:hover {
-  background: none;
-  outline: 1.5px solid #1897BF;
-  color: #1897BF;
+  border: 1.5px solid #1aa5cf;
   cursor: pointer;
+  -webkit-box-shadow: 0px 3px 6px rgba(24, 152, 191, 0.3843137255);
+          box-shadow: 0px 3px 6px rgba(24, 152, 191, 0.3843137255);
+  background-color: #1aa5cf;
 }
 .plans-actu .plans .silver-plan a button:hover {
   color: #7C7C7C;
@@ -616,20 +622,21 @@ footer .copyright p {
   height: 50px;
   padding: 12px 30px;
   border-radius: 10px;
-  border: none;
   outline: none;
+  border: 1.5px solid #1897BF;
   background-color: #1897BF;
   color: #FAFAFA;
-  font-size: 16px;
+  font-size: 14px;
   -webkit-transition: 500ms;
   transition: 500ms;
   background-color: #FFC225;
 }
 .plans-actu .plans .gold-plan a button:hover {
-  background: none;
-  outline: 1.5px solid #1897BF;
-  color: #1897BF;
+  border: 1.5px solid #1aa5cf;
   cursor: pointer;
+  -webkit-box-shadow: 0px 3px 6px rgba(24, 152, 191, 0.3843137255);
+          box-shadow: 0px 3px 6px rgba(24, 152, 191, 0.3843137255);
+  background-color: #1aa5cf;
 }
 .plans-actu .plans .gold-plan a button:hover {
   color: #FFC225;

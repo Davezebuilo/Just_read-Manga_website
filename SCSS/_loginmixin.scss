@@ -80,29 +80,68 @@
                     width: 85%;
                 }
 
+                .user-password{
+                    width: 100%;
+                    height: 56px;
+                    position: relative;
+                    input{
+                        @include filled-inputs();
+                        position: absolute;
+                        top: 0;
+                    }
+                    >button{
+                        position: absolute;
+                        top: 5px;
+                        right: 10px;
+                        padding: 10px;
+                        background: none;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+
+                        i{
+                            font-size: 22px;
+                            font-weight: 400;
+                            color: $grayColor;
+                        }
+                    }
+                }
+
                 input{
                     @include filled-inputs();
                 }
 
-                #password-login,
-                #password-register,
-                #password-confirm{
-                    padding-right: 30px;
-                    background-repeat: no-repeat;
-                    background-position: 95% ;
-                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='rgba(124,124,124,1)'%3E%3Cpath d='M1.18164 12C2.12215 6.87976 6.60812 3 12.0003 3C17.3924 3 21.8784 6.87976 22.8189 12C21.8784 17.1202 17.3924 21 12.0003 21C6.60812 21 2.12215 17.1202 1.18164 12ZM12.0003 17C14.7617 17 17.0003 14.7614 17.0003 12C17.0003 9.23858 14.7617 7 12.0003 7C9.23884 7 7.00026 9.23858 7.00026 12C7.00026 14.7614 9.23884 17 12.0003 17ZM12.0003 15C10.3434 15 9.00026 13.6569 9.00026 12C9.00026 10.3431 10.3434 9 12.0003 9C13.6571 9 15.0003 10.3431 15.0003 12C15.0003 13.6569 13.6571 15 12.0003 15Z'%3E%3C/path%3E%3C/svg%3E");
-                    background-size: 20px;
-                    &:hover{
-                        cursor: pointer;
-                    }
+                // #password-login,
+                // #password-register,
+                // #password-confirm{
+                //     padding-right: 30px;
+                //     background-repeat: no-repeat;
+                //     background-position: 95% ;
+                //     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='rgba(124,124,124,1)'%3E%3Cpath d='M1.18164 12C2.12215 6.87976 6.60812 3 12.0003 3C17.3924 3 21.8784 6.87976 22.8189 12C21.8784 17.1202 17.3924 21 12.0003 21C6.60812 21 2.12215 17.1202 1.18164 12ZM12.0003 17C14.7617 17 17.0003 14.7614 17.0003 12C17.0003 9.23858 14.7617 7 12.0003 7C9.23884 7 7.00026 9.23858 7.00026 12C7.00026 14.7614 9.23884 17 12.0003 17ZM12.0003 15C10.3434 15 9.00026 13.6569 9.00026 12C9.00026 10.3431 10.3434 9 12.0003 9C13.6571 9 15.0003 10.3431 15.0003 12C15.0003 13.6569 13.6571 15 12.0003 15Z'%3E%3C/path%3E%3C/svg%3E");
+                //     background-size: 20px;
+                //     &:hover{
+                //         cursor: pointer;
+                //     }
+                // }
+            }
+
+            a{
+
+                button{
+                    @include button-2;
+                    width: 100%;
+                    height: 60px;
+                    margin-top: 50px;
+                    
                 }
             }
     
             .forgot-remem{
                 display: flex;
                 align-items: center;
-                gap: 70px;
+                justify-content: space-between;
                 margin-top: 30px;
+                width: 100%;
     
                 a{
                     text-decoration: none;
@@ -152,22 +191,22 @@
                 }
             }
 
-            button{
-                @include button-2;
-                width: 416px;
-                height: 60px;
-                margin-top: 50px;
+            // >button{
+            //     @include button-2;
+            //     width: 100%;
+            //     height: 60px;
+            //     margin-top: 50px;
                 
-            }
+            // }
         }
 
-        button{
-            @include button-2;
-            width: 416px;
-            height: 60px;
-            margin-top: 50px;
+        // button{
+        //     @include button-2;
+        //     width: 416px;
+        //     height: 60px;
+        //     margin-top: 50px;
             
-        }
+        // }
 
         .cate-housing{
             @include cate-housing();

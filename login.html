@@ -11,10 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600&family=Playball&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/just-read-favicon.svg" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 </head>
 <body>
     <!--Beginning of laptop navbar  -->
-    <header>
+    <header id="laptop-nav">
         <div class="hamburger">
             <p>
                 <i class="ri-menu-line"></i>
@@ -33,9 +34,12 @@
                 <li><a href="#">Contacts</a></li>
             </ul>
         </div>
-        <div class="search">
-            <p><i class="ri-search-line"></i></p>
+        <div class="search" id="search">
+            <input type="text" placeholder="Search">
+            <!-- <button type="submit"><i class="ri-search-line"></i></button> -->
+            <i class="ri-close-line" id="search-close"></i>
         </div>
+        <button type="submit" id="search-icon"><i class="ri-search-line"></i></button>
         <div class="cta-section">
             <a href="register.html">
                 <button class="register">Register</button>
@@ -62,10 +66,15 @@
             <form class="components" id="login-form">
                 <div class="inputs">
                     <!-- <label for="email-login"></label> -->
-                    <input type="email" id="email-login" placeholder="Email">
-                    <p id="invalid-email"><i class="ri-close-circle-line"></i>h</p>
+                    <div class="user-email">
+                        <input type="email" id="email-login" placeholder="Email">
+                    </div>
+                    <p id="invalid-email"><i class="ri-close-circle-line"></i></p>
                     <!-- <label for="password-login"></label> -->
-                    <input type="password" name="" id="password-login" placeholder="Password">
+                    <div class="user-password">
+                        <input type="password" name="" id="password-login" placeholder="Password">
+                        <button type="button"><i class="ri-eye-fill" id="toggle-password"></i></button>
+                    </div>
                     <p id="incorrect-password"></p>
                 </div>
                 <div class="forgot-remem">
@@ -152,7 +161,8 @@
         </div>
     </footer>
     <!-- End of footer -->
-
+    <script src="./JS/nav.js"></script>
+    <script src="./JS/passwordprev.js"></script>
     <script src="./JS/loginValidate.js"></script>
 </body>
 </html>

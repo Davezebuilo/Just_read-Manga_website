@@ -11,10 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600&family=Playball&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/just-read-favicon.svg" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 </head>
 <body>
     <!--Beginning of laptop navbar  -->
-    <header>
+    <header id="laptop-nav">
         <div class="hamburger">
             <p>
                 <i class="ri-menu-line"></i>
@@ -33,9 +34,12 @@
                 <li><a href="#">Contacts</a></li>
             </ul>
         </div>
-        <div class="search">
-            <p><i class="ri-search-line"></i></p>
+        <div class="search" id="search">
+            <input type="text" name="search" placeholder="Search">
+            <!-- <button type="submit"><i class="ri-search-line"></i></button> -->
+            <i class="ri-close-line" id="search-close"></i>
         </div>
+        <button type="submit" id="search-icon"><i class="ri-search-line"></i></button>
         <div class="cta-section">
             <a href="register.html">
                 <button class="register">Register</button>
@@ -62,8 +66,14 @@
                 <div class="inputs">
                     <input type="text" id="name-register" placeholder="Name">
                     <input type="email" id="email-register" placeholder="Email">
-                    <input type="password" id="password-register" placeholder="Password">
-                    <input type="password" id="password-confirm" placeholder="Confirm Password">
+                    <div class="user-password">
+                        <input type="password" name="" id="password-login" placeholder="Password">
+                        <button type="button"><i class="ri-eye-fill" id="toggle-password"></i></button>
+                    </div>
+                    <div class="user-password">
+                        <input type="password" name="" id="password-login" placeholder="Password">
+                        <button type="button"><i class="ri-eye-fill" id="toggle-password"></i></button>
+                    </div>
                 </div>
                 <a href="#">
                     <button type="submit">
@@ -142,5 +152,8 @@
         </div>
     </footer>
     <!-- End of footer -->
+
+    <script src="./JS/nav.js"></script>
+    <script src="./JS/passwordprev.js"></script>
 </body>
 </html>

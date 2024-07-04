@@ -65,16 +65,6 @@ const anywhr = function(){
 }
 
 
-const navbarL = document.getElementById('laptop-nav');
-
-// to give the navbar shadow when user scrolls
-window.addEventListener('scroll', ()=>{
-    if(window.scrollY > 100){
-        navbarL.style.boxShadow = '0px 0px 3px 8px rgba(0, 0, 0, 0.02)';
-    }else{
-        navbarL.style.boxShadow = 'none';
-    }
-})
 
 //setting the z indexes for all images
 imagesD.style.zIndex = '10';

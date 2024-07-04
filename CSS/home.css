@@ -43,8 +43,8 @@ header {
   z-index: 50;
 }
 header .logo {
-  width: 10%;
-  height: 10%;
+  width: 8%;
+  height: 8%;
   cursor: pointer;
 }
 header .logo .logowrap {
@@ -72,7 +72,7 @@ header .navlinks ul li {
 header .navlinks ul li a {
   text-decoration: none;
   color: #1897BF;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Lexend", sans-serif;
   position: relative;
   overflow: hidden;
@@ -91,53 +91,121 @@ header .navlinks ul li a::before {
 header .navlinks ul li a:hover::before {
   bottom: -0.3rem;
 }
-header .search {
+header > button {
+  padding: 10px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+  border: none;
+  outline: none;
+  background: none;
+}
+header > button i {
+  font-size: 20px;
+  font-weight: 400;
   color: #1897BF;
-  font-size: 16px;
+}
+header > button:hover {
+  background-color: #1897BF;
   cursor: pointer;
+}
+header > button:hover i {
+  color: white;
+}
+header .search {
+  position: relative;
+}
+header .search > i {
+  position: absolute;
+  font-size: 15px;
+  font-weight: 400;
+  top: 30%;
+  right: -20px;
+  cursor: pointer;
+}
+header .search input {
+  width: 100%;
+  padding: 10px 25px;
+  border: none;
+  outline: none;
+  background-color: #EEE;
+  border-radius: 10px;
+}
+header .search input:focus {
+  outline: 1px solid #1897BF;
+}
+header .search button {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  padding: 4px;
+  background: none;
+  outline: none;
+  border: none;
+}
+header .search button i {
+  font-size: 15px;
+  font-weight: 400;
+  color: #1897BF;
 }
 header .cta-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2rem;
+  gap: 20px;
 }
-header .cta-section .register {
-  padding: 12px 30px;
+header .cta-section a {
+  text-decoration: none;
+}
+header .cta-section a .register {
+  padding: 12px 18px;
   border-radius: 10px;
-  border: none;
-  outline: 1.5px solid #1897BF;
+  outline: none;
+  border: 1.5px solid #FFC225;
   background: none;
-  color: #1897BF;
-  font-size: 16px;
+  color: #FFC225;
+  font-size: 14px;
   -webkit-transition: 500ms;
   transition: 500ms;
 }
-header .cta-section .register:hover {
+header .cta-section a .register:hover {
   background-color: #FFC225;
   color: #FAFAFA;
-  outline: none;
+  cursor: pointer;
 }
-header .cta-section .login {
+header .cta-section a {
+  text-decoration: none;
+}
+header .cta-section a .login {
   padding: 12px 30px;
   border-radius: 10px;
-  border: none;
   outline: none;
+  border: 1.5px solid #1897BF;
   background-color: #1897BF;
   color: #FAFAFA;
-  font-size: 16px;
+  font-size: 14px;
   -webkit-transition: 500ms;
   transition: 500ms;
 }
-header .cta-section .login:hover {
-  background: none;
-  outline: 1.5px solid #1897BF;
-  color: #1897BF;
+header .cta-section a .login:hover {
+  border: 1.5px solid #1aa5cf;
   cursor: pointer;
+  -webkit-box-shadow: 0px 3px 6px rgba(24, 152, 191, 0.3843137255);
+          box-shadow: 0px 3px 6px rgba(24, 152, 191, 0.3843137255);
+  background-color: #1aa5cf;
 }
 header .hamburger {
   color: #1897BF;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   display: none;
 }
@@ -160,8 +228,8 @@ header .hamburger {
     padding-inline: 20px;
   }
   header .logo {
-    width: 80px;
-    height: 30px;
+    width: 20%;
+    height: 20%;
   }
   header .navlinks {
     display: none;
@@ -229,7 +297,7 @@ header .hamburger {
 }
 .herosect .herodiv .textarea-h .ratings-h div p {
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   color: #7C7C7C;
 }
 .herosect .herodiv .textarea-h .ratings-h div p span {
@@ -238,19 +306,20 @@ header .hamburger {
 .herosect .herodiv .textarea-h .cta-h button {
   padding: 12px 30px;
   border-radius: 10px;
-  border: none;
   outline: none;
+  border: 1.5px solid #1897BF;
   background-color: #1897BF;
   color: #FAFAFA;
-  font-size: 16px;
+  font-size: 14px;
   -webkit-transition: 500ms;
   transition: 500ms;
 }
 .herosect .herodiv .textarea-h .cta-h button:hover {
-  background: none;
-  outline: 1.5px solid #1897BF;
-  color: #1897BF;
+  border: 1.5px solid #1aa5cf;
   cursor: pointer;
+  -webkit-box-shadow: 0px 3px 6px rgba(24, 152, 191, 0.3843137255);
+          box-shadow: 0px 3px 6px rgba(24, 152, 191, 0.3843137255);
+  background-color: #1aa5cf;
 }
 .herosect .herodiv .textarea-h .socials-h {
   display: -webkit-box;
